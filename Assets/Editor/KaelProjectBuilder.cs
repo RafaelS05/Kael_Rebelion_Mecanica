@@ -573,14 +573,8 @@ namespace Kael.EditorTools
             new GameObject("GameManager").AddComponent<GameManager>();
             new GameObject("AudioManager").AddComponent<AudioManager>();
 
-            // Fondo
-            var bg = SpriteObject("Fondo_Fabrica", art.background, -20);
-            var bgsr = bg.GetComponent<SpriteRenderer>();
-            bgsr.drawMode = SpriteDrawMode.Tiled;
-            bg.transform.localScale = new Vector3(2f, 2f, 1f);
-            bgsr.size = new Vector2(W * 0.5f + 20f, 4f);          // en mundo: (W + 40) x 8
-            bgsr.color = new Color(1f, 1f, 1f, 0.9f);
-            bg.transform.position = new Vector3(W * 0.5f, 6f, 0f); // de y=2 a y=10
+            // Fondo por capas según el GDD (exterior industrial con parallax + sala de Oxibot)
+            KaelBackgroundBuilder.CreateBackgrounds(W, H, cam);
 
             // Tilemaps
             var grid = new GameObject("Grid").AddComponent<Grid>();
