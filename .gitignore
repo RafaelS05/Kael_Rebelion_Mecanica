@@ -1,0 +1,42 @@
+# Unity (generado automáticamente: no subir al repo)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Builds y paquetes
+*.apk
+*.aab
+*.unitypackage
+*.app
+crashlytics-build.properties
+
+# Paquete de instalación (ya descomprimido)
+/Kael_Avance2.zip
